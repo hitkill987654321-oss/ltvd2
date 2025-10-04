@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+    table {
+      border-collapse: collapse;
+      width: 600px;
+      margin: 20px auto;
+      border: 1px solid #aaa;
+    }
+    th {
+      text-align: center;
+      font-size: 20px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      background-color: #f2f2f2;
+    }
+    td {
+      border: 1px solid #aaa;
+      padding: 8px;
+    }
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 95%;
+      padding: 5px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+    .buttons {
+      text-align: center;
+      padding: 10px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 6px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"] {
+      background: #4CAF50;
+      color: white;
+    }
+    input[type="reset"] {
+      background: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <th colspan="2">ĐĂNG KÝ</th>
+      </tr>
+      <tr>
+        <td>Họ tên</td>
+        <td><input type="text" placeholder="Nhập họ tên"></td>
+      </tr>
+      <tr>
+        <td>Username</td>
+        <td><input type="text" placeholder="Nhập tên đăng nhập"></td>
+      </tr>
+      <tr>
+        <td>Mật khẩu</td>
+        <td><input type="password" placeholder="Mật khẩu"></td>
+      </tr>
+      <tr>
+        <td>Nhập lại Mật khẩu</td>
+        <td><input type="password" placeholder="Nhập lại Mật khẩu"></td>
+      </tr>
+      <tr>
+        <td>Giới tính</td>
+        <td>
+          <input type="radio" name="gender"> Nam
+          <input type="radio" name="gender"> Nữ
+          <input type="radio" name="gender"> Khác
+        </td>
+      </tr>
+      <tr>
+        <td>Ngày sinh</td>
+        <td>
+          <select>
+            <option>01</option><option>02</option><option>03</option>
+          </select>
+          <select>
+            <option>01</option><option>02</option><option>03</option>
+          </select>
+          <select>
+            <option>2001</option><option>2002</option><option>2003</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td><textarea></textarea></td>
+      </tr>
+      <tr>
+        <td>Avatar</td>
+        <td><input type="file"></td>
+      </tr>
+      <tr>
+        <td>Sở thích</td>
+        <td>
+          <input type="checkbox"> Xem phim
+          <input type="checkbox"> Thể thao
+          <input type="checkbox"> Trò chơi
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="buttons">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Ok">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
